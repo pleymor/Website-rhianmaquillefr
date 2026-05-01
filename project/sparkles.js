@@ -38,11 +38,7 @@
     return v || fallback;
   }
 
-  const COLORS = [
-    cssVar('--gold', '#C9A26A'),
-    cssVar('--gold-soft', '#E5CFA8'),
-    cssVar('--accent-soft', '#F5C5BD'),
-  ];
+  const COLORS = ['#FFFFFF', '#F4F1EA', '#D9DEE3', '#BFC6CF'];
 
   /**
    * Random float in [min, max).
