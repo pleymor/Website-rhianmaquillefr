@@ -1,0 +1,34 @@
+name: Deploy to Infomaniak
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync files to Infomaniak via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ vars.FTP_SERVER }}
+          username: ${{ vars.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          security: loose
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.idea/**
+            **/.DS_Store
+            **/node_modules/**
+            README.md
+            MEMORY.md
+            memory/**
