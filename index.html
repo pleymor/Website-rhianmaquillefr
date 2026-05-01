@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr" data-palette="rose" data-typo="modern">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhian Maquille — Maquillage Professionnel · Paris</title>
+  <link rel="icon" type="image/png" href="project/assets/logo-rm.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Italianno&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="project/styles.css" />
+  <style>
+    /* Hide mobile-only nav item outside open menu */
+    .nav-links li.mobile-only { display: none; }
+    @media (max-width: 1100px) {
+      .nav-links.open li.mobile-only { display: list-item; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo">
+      <img src="project/assets/logo-rm.png" alt="Rhian Maquille" />
+      <span class="nav-name">Rhian Maquille</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#services">Prestations</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="mobile-only"><a href="#contact" class="mobile-cta">Réserver</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Réserver</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO — CENTERED ===== -->
+  <section class="hero hero-centered" id="top">
+    <img class="hero-deco-monogram" src="project/assets/logo-rm.png" alt="" />
+
+    <!-- Watercolor blob top-right -->
+    <svg style="position:absolute;top:8%;right:-8%;width:460px;height:460px;opacity:0.7;pointer-events:none;z-index:0;filter:blur(0.5px)"
+         viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="wca1" cx="50%" cy="50%">
+          <stop offset="0%"   stop-color="var(--accent-soft)" stop-opacity="0.9"/>
+          <stop offset="60%"  stop-color="var(--accent-pale)" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="var(--accent-pale)" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="wca2" cx="60%" cy="40%">
+          <stop offset="0%"   stop-color="var(--accent)"      stop-opacity="0.6"/>
+          <stop offset="70%"  stop-color="var(--accent-soft)" stop-opacity="0.2"/>
+          <stop offset="100%" stop-color="var(--accent-soft)" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="wca3" cx="30%" cy="60%">
+          <stop offset="0%"   stop-color="var(--gold-soft)"   stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="var(--gold-soft)"   stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="300" cy="280" rx="240" ry="220" fill="url(#wca1)"/>
+      <ellipse cx="360" cy="240" rx="180" ry="160" fill="url(#wca2)"/>
+      <ellipse cx="220" cy="340" rx="140" ry="120" fill="url(#wca3)"/>
+      <circle cx="180" cy="180" r="3" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="200" cy="220" r="2" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="240" cy="160" r="4" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="400" cy="320" r="3" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="440" cy="200" r="2" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="380" cy="380" r="3" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="180" cy="380" r="2" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="340" cy="460" r="3" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="480" cy="280" r="4" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="160" cy="280" r="2" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="420" cy="140" r="3" fill="var(--gold)" opacity="0.7"/>
+      <circle cx="260" cy="480" r="2" fill="var(--gold)" opacity="0.7"/>
+    </svg>
+
+    <!-- Watercolor blob bottom-left -->
+    <svg style="position:absolute;bottom:5%;left:-10%;width:380px;height:380px;opacity:0.55;transform:rotate(180deg);pointer-events:none;z-index:0;filter:blur(0.5px)"
+         viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="wcb1" cx="50%" cy="50%">
+          <stop offset="0%"   stop-color="var(--accent-soft)" stop-opacity="0.9"/>
+          <stop offset="60%"  stop-color="var(--accent-pale)" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="var(--accent-pale)" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="wcb2" cx="60%" cy="40%">
+          <stop offset="0%"   stop-color="var(--accent)"      stop-opacity="0.6"/>
+          <stop offset="70%"  stop-color="var(--accent-soft)" stop-opacity="0.2"/>
+          <stop offset="100%" stop-color="var(--accent-soft)" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="300" cy="280" rx="240" ry="220" fill="url(#wcb1)"/>
+      <ellipse cx="360" cy="240" rx="180" ry="160" fill="url(#wcb2)"/>
+    </svg>
+
+    <div class="hero-text reveal in">
+      <span class="eyebrow">Maquillage Professionnel · Paris &amp; IDF</span>
+      <h1 class="hero-title">
+        Sublimez ce qui
+        <span class="script-word">vous rend unique.</span>
+      </h1>
+      <p class="hero-sub">
+        Rhian Laugueux — maquilleuse professionnelle. Un travail délicat, romantique
+        et précis pour vos mariages, événements, shootings et apprentissages personnalisés.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          Réserver une date <span class="arrow"></span>
+        </a>
+        <a href="#services" class="btn btn-ghost">Voir les prestations</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Découvrir</div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="about" id="about">
+    <div class="deco-wc wc-1"></div>
+    <div class="deco-wc wc-3"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal-x">
+          <div class="about-image-deco"></div>
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&q=80"
+               alt="Rhian Laugueux" loading="lazy" />
+        </div>
+        <div class="reveal-x right">
+          <span class="eyebrow left">Qui suis-je</span>
+          <h2 class="section-title" style="margin-top:24px">
+            Rhian, <em>maquilleuse</em><br />passionnée.
+          </h2>
+          <p class="about-quote">
+            « Mon travail commence par votre regard. Tout part de là. »
+          </p>
+          <p class="lead" style="margin-top:24px">
+            Maquilleuse passionnée et autodidacte, je conçois chaque
+            prestation comme un moment unique. Je travaille avec des produits d'exception, dans
+            le respect de votre peau et de votre personnalité.
+          </p>
+          <ul class="about-list">
+            <li>Passion &amp; autodidacte</li>
+            <li>+12 ans d'expérience</li>
+            <li>Mariées accompagnées</li>
+            <li>Produits sélectionnés avec soin</li>
+            <li>Déplacement Paris &amp; IDF</li>
+            <li>Essai compris pour les mariées</li>
+          </ul>
+          <div class="about-signature">Rhian.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESTATIONS ===== -->
+  <section class="services" id="services">
+    <div class="deco-wc wc-2"></div>
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="eyebrow">Prestations</span>
+        <h2 class="section-title" style="margin-top:20px">
+          Cinq façons d'<em>être sublime.</em>
+        </h2>
+        <p class="lead">
+          Chaque prestation est sur mesure. Les tarifs sont indicatifs et précisés au devis,
+          selon le lieu et la durée.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- 01 Mariée -->
+        <div class="service-card reveal delay-1">
+          <div class="ic">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 2C12 7 7 8 7 13a5 5 0 0010 0c0-5-5-6-5-11z"/>
+              <path d="M9 18c0 2 1.5 4 3 4s3-2 3-4"/>
+            </svg>
+          </div>
+          <div class="num">— 01</div>
+          <h3>Mariée</h3>
+          <span class="price">à partir de 280 €</span>
+          <p>Une expérience complète : essai personnalisé, conseils, maquillage le jour J et retouches incluses.
+             Pour une mariée rayonnante du matin au dernier slow.</p>
+          <div class="duration">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            2h · Essai inclus
+          </div>
+        </div>
+
+        <!-- 02 Soirée -->
+        <div class="service-card reveal delay-2">
+          <div class="ic">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
+            </svg>
+          </div>
+          <div class="num">— 02</div>
+          <h3>Soirée &amp; Événement</h3>
+          <span class="price">à partir de 95 €</span>
+          <p>Gala, anniversaire, réception : un maquillage tenue longue durée, photogénique, qui sublime sans alourdir.</p>
+          <div class="duration">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            1h · À domicile
+          </div>
+        </div>
+
+        <!-- 03 Shooting -->
+        <div class="service-card reveal delay-3">
+          <div class="ic">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="6" width="18" height="14" rx="2"/>
+              <circle cx="12" cy="13" r="4"/>
+              <path d="M8 6l1.5-2h5L16 6"/>
+            </svg>
+          </div>
+          <div class="num">— 03</div>
+          <h3>Shooting Photo</h3>
+          <span class="price">à partir de 150 €</span>
+          <p>Beauty, lookbook, éditorial : un maquillage pensé pour la lumière et l'objectif.
+             Direction artistique discutée en amont.</p>
+          <div class="duration">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            1h30 · En studio
+          </div>
+        </div>
+
+        <!-- 04 Cours -->
+        <div class="service-card reveal delay-4">
+          <div class="ic">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M4 19.5V6.5A2 2 0 016 4.5h14v15H6a2 2 0 01-2-2z"/>
+              <path d="M8 8h8M8 12h6M8 16h4"/>
+            </svg>
+          </div>
+          <div class="num">— 04</div>
+          <h3>Cours self-makeup</h3>
+          <span class="price">à partir de 120 €</span>
+          <p>Apprenez les gestes qui vous correspondent. Cours individuel, sur votre peau, avec une trousse adaptée à vos besoins quotidiens.</p>
+          <div class="duration">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            1h30 · Particulier
+          </div>
+        </div>
+
+        <!-- 05 Jour -->
+        <div class="service-card reveal delay-1">
+          <div class="ic">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+            </svg>
+          </div>
+          <div class="num">— 05</div>
+          <h3>Maquillage de jour</h3>
+          <span class="price">à partir de 75 €</span>
+          <p>Un nude lumineux pour un rendez-vous important, un déjeuner, une rencontre : naturel, frais, vous en mieux.</p>
+          <div class="duration">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            45 min · À domicile
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-header reveal">
+        <span class="eyebrow">Galerie</span>
+        <h2 class="section-title" style="margin-top:20px">
+          Quelques <em>visages</em>,<br />quelques moments.
+        </h2>
+      </div>
+      <div class="gallery-filters reveal delay-1">
+        <button class="gallery-filter active" data-filter="all">Tout voir</button>
+        <button class="gallery-filter" data-filter="mariee">Mariée</button>
+        <button class="gallery-filter" data-filter="soiree">Soirée</button>
+        <button class="gallery-filter" data-filter="shooting">Shooting</button>
+        <button class="gallery-filter" data-filter="jour">Jour</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gi-1 reveal-scale" data-cat="mariee"
+           data-url="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=80"
+           data-title="Mariée bohème">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=80"
+             alt="Mariée bohème" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Mariage · Provence</div>
+          <h4>Mariée bohème</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-2 reveal-scale" data-cat="shooting"
+           data-url="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=700&q=80"
+           data-title="Beauty éditorial">
+        <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=700&q=80"
+             alt="Beauty éditorial" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Studio Paris</div>
+          <h4>Beauty éditorial</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-3 reveal-scale" data-cat="soiree"
+           data-url="https://images.unsplash.com/photo-1503236823255-94609f598e71?w=700&q=80"
+           data-title="Soirée glamour">
+        <img src="https://images.unsplash.com/photo-1503236823255-94609f598e71?w=700&q=80"
+             alt="Soirée glamour" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Gala · Opéra</div>
+          <h4>Soirée glamour</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-4 reveal-scale" data-cat="mariee"
+           data-url="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80"
+           data-title="Glow nude">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80"
+             alt="Glow nude" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Mariage · Versailles</div>
+          <h4>Glow nude</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-5 reveal-scale" data-cat="shooting"
+           data-url="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=700&q=80"
+           data-title="Lookbook printemps">
+        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=700&q=80"
+             alt="Lookbook printemps" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Brand Shoot</div>
+          <h4>Lookbook printemps</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-6 reveal-scale" data-cat="jour"
+           data-url="https://images.unsplash.com/photo-1526045478516-99145907023c?w=900&q=80"
+           data-title="Nude lumineux">
+        <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?w=900&q=80"
+             alt="Nude lumineux" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Maquillage de jour</div>
+          <h4>Nude lumineux</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-7 reveal-scale" data-cat="mariee"
+           data-url="https://images.unsplash.com/photo-1604004215053-d6c424e29846?w=800&q=80"
+           data-title="Demoiselle d'honneur">
+        <img src="https://images.unsplash.com/photo-1604004215053-d6c424e29846?w=800&q=80"
+             alt="Demoiselle d'honneur" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Mariage · Bretagne</div>
+          <h4>Demoiselle d'honneur</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-8 reveal-scale" data-cat="soiree"
+           data-url="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
+           data-title="Smoky doré">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
+             alt="Smoky doré" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Soirée · Cannes</div>
+          <h4>Smoky doré</h4>
+        </div>
+      </div>
+      <div class="gallery-item gi-9 reveal-scale" data-cat="shooting"
+           data-url="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80"
+           data-title="Portrait pastel">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80"
+             alt="Portrait pastel" loading="lazy" />
+        <div class="caption">
+          <div class="tag">Éditorial</div>
+          <h4>Portrait pastel</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TÉMOIGNAGE ===== -->
+  <section class="testimonial">
+    <div class="container-narrow">
+      <span class="eyebrow">Témoignages</span>
+      <p class="testimonial-quote reveal" style="margin-top:32px;opacity:0.5;font-style:normal">
+        Bientôt — les mots de mes mariées et clientes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="deco-wc wc-1"></div>
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-x">
+          <span class="eyebrow left">Contact</span>
+          <h2 style="margin-top:20px">Parlons de votre <em>plus beau jour.</em></h2>
+          <p class="lead">
+            Décrivez-moi votre projet : date, lieu, prestation envisagée. Je vous réponds
+            sous 48h avec une proposition sur mesure.
+          </p>
+
+          <div class="contact-detail">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>
+              </svg>
+            </div>
+            <div class="meta">
+              <div class="lbl">Email</div>
+              <div class="val">contact@rhianmaquille.fr</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="meta">
+              <div class="lbl">Instagram</div>
+              <div class="val">@rhianmaquille</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="meta">
+              <div class="lbl">Zone</div>
+              <div class="val">Paris &amp; Île-de-France — si accessible en transports en commun</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal-x right">
+          <div id="formSuccess" class="form-success" style="display:none">
+            <div class="check">✓</div>
+            <h3>Demande envoyée !</h3>
+            <p id="formSuccessMsg">Merci, je reviens vers vous très vite avec une proposition.</p>
+          </div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Votre nom</label>
+                <input required placeholder="Camille Dupont" name="name" />
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input required type="email" placeholder="camille@email.fr" name="email" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Date de l'événement</label>
+              <input type="date" name="date" />
+            </div>
+            <div class="form-field">
+              <label>Prestation souhaitée</label>
+              <div class="service-pills">
+                <button type="button" class="service-pill selected" data-pill>Mariée</button>
+                <button type="button" class="service-pill" data-pill>Soirée &amp; Événement</button>
+                <button type="button" class="service-pill" data-pill>Shooting Photo</button>
+                <button type="button" class="service-pill" data-pill>Cours self-makeup</button>
+                <button type="button" class="service-pill" data-pill>Maquillage de jour</button>
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Votre projet</label>
+              <textarea placeholder="Lieu, ambiance, nombre de personnes, inspirations..." name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              Envoyer ma demande <span class="arrow"></span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="project/assets/logo-rm.png" alt="Rhian Maquille" />
+          <p>Maquillage professionnel à Paris et en Île-de-France. Mariée, événement, shooting, cours.</p>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Prestations</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li>contact@rhianmaquille.fr</li>
+            <li>@rhianmaquille</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Zone</h5>
+          <ul>
+            <li>Paris</li>
+            <li>Île-de-France</li>
+            <li>Si accessible en transports</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Rhian Laugueux — Rhian Maquille</span>
+        <span>Site composé avec amour · Mentions légales</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">×</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script>
+    // ── Nav scroll ──────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ── Hamburger menu ──────────────────────────────────────
+    const burger   = document.getElementById('navBurger');
+    const navLinks = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        burger.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ── Reveal on scroll ────────────────────────────────────
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          revealObs.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-x, .reveal-scale').forEach(el => {
+      if (!el.classList.contains('in')) revealObs.observe(el);
+    });
+
+    // ── Gallery filter ──────────────────────────────────────
+    const filterBtns  = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        galleryItems.forEach(item => {
+          item.classList.toggle('hidden', f !== 'all' && item.dataset.cat !== f);
+        });
+      });
+    });
+
+    // ── Lightbox ────────────────────────────────────────────
+    const lightbox    = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        lightboxImg.src = item.dataset.url;
+        lightboxImg.alt = item.dataset.title;
+        lightbox.classList.add('open');
+      });
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', () => {
+      lightbox.classList.remove('open');
+    });
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) lightbox.classList.remove('open');
+    });
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') lightbox.classList.remove('open');
+    });
+
+    // ── Service pills ───────────────────────────────────────
+    document.querySelectorAll('[data-pill]').forEach(pill => {
+      pill.addEventListener('click', () => pill.classList.toggle('selected'));
+    });
+
+    // ── Contact form ────────────────────────────────────────
+    const form           = document.getElementById('contactForm');
+    const formSuccess    = document.getElementById('formSuccess');
+    const formSuccessMsg = document.getElementById('formSuccessMsg');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = form.querySelector('[name="name"]').value.trim();
+      formSuccessMsg.textContent =
+        `Merci ${name || ''}, je reviens vers vous très vite avec une proposition.`;
+      form.style.display        = 'none';
+      formSuccess.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
