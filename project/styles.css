@@ -1195,6 +1195,16 @@ section {
   transition: color 0.3s;
 }
 .footer a:hover { color: var(--accent-soft); }
+.ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.ig-link svg {
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.ig-link:hover svg { transform: scale(1.12) rotate(-4deg); }
 .footer-bottom {
   border-top: 1px solid rgba(253, 244, 236, 0.1);
   padding-top: 24px;
