@@ -20,8 +20,7 @@ jobs:
           server: ${{ vars.FTP_SERVER }}
           username: ${{ vars.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps-legacy
-          security: loose
+          protocol: ftp
           exclude: |
             **/.git*
             **/.git*/**
